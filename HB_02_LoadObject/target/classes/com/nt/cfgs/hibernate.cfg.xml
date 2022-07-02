@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+<session-factory>
+
+		<!-- Conncetion Properties -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sys</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Ckj123@0909</property>
+
+<!-- Hibernate Properties -->
+
+<property name="show_sql">true</property>
+<property name="format_sql">true</property>
+<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+<!-- Mapping File name -->
+
+<mapping resource="com/nt/entity/Product.hbm.xml"/>
+
+</session-factory>
+
+
+</hibernate-configuration>
